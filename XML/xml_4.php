@@ -10,4 +10,4 @@ $descTag->setAttribute('type', 'short');
 $rootTag->appendChild($descTag);
 
 print $dom->saveXML();
-
+file_put_contents('/tmp/xml4.xml', $dom->saveXML());
